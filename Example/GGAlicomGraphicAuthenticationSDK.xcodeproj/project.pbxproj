@@ -38,9 +38,9 @@
 
 /* Begin PBXFileReference section */
 		0460F9E209C605059695CC79 /* Pods_GGAlicomGraphicAuthenticationSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GGAlicomGraphicAuthenticationSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E2ABDAF7DA6BB2561C3E9A7 /* GGAlicomGraphicAuthenticationSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = GGAlicomGraphicAuthenticationSDK.podspec; path = ../GGAlicomGraphicAuthenticationSDK.podspec; sourceTree = "<group>"; };
+		0E2ABDAF7DA6BB2561C3E9A7 /* GGAlicomGraphicAuthenticationSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GGAlicomGraphicAuthenticationSDK.podspec; path = ../GGAlicomGraphicAuthenticationSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2EC60F675B8AE2DD0B72A86D /* Pods-GGAlicomGraphicAuthenticationSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGAlicomGraphicAuthenticationSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-GGAlicomGraphicAuthenticationSDK_Example/Pods-GGAlicomGraphicAuthenticationSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		4114A3DB06FA48FC3337022C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4114A3DB06FA48FC3337022C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5CEFFCD74D4839D3E7F964FD /* Pods-GGAlicomGraphicAuthenticationSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGAlicomGraphicAuthenticationSDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-GGAlicomGraphicAuthenticationSDK_Tests/Pods-GGAlicomGraphicAuthenticationSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* GGAlicomGraphicAuthenticationSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GGAlicomGraphicAuthenticationSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,7 +61,7 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		65F1A819C2E5E7DEA905F124 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		65F1A819C2E5E7DEA905F124 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		809F287B6124A8D6342FB909 /* Pods-GGAlicomGraphicAuthenticationSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGAlicomGraphicAuthenticationSDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-GGAlicomGraphicAuthenticationSDK_Tests/Pods-GGAlicomGraphicAuthenticationSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		80E0D6540657FB7C8547454D /* Pods_GGAlicomGraphicAuthenticationSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GGAlicomGraphicAuthenticationSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,7 +193,6 @@
 				5CEFFCD74D4839D3E7F964FD /* Pods-GGAlicomGraphicAuthenticationSDK_Tests.debug.xcconfig */,
 				809F287B6124A8D6342FB909 /* Pods-GGAlicomGraphicAuthenticationSDK_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +207,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				6EF645D21C4A586B861B43CC /* [CP] Embed Pods Frameworks */,
+				5084D8B601DFEEBB9B230D6C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +258,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -320,22 +320,22 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GGAlicomGraphicAuthenticationSDK_Tests/Pods-GGAlicomGraphicAuthenticationSDK_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6EF645D21C4A586B861B43CC /* [CP] Embed Pods Frameworks */ = {
+		5084D8B601DFEEBB9B230D6C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GGAlicomGraphicAuthenticationSDK_Example/Pods-GGAlicomGraphicAuthenticationSDK_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GGAlicomGraphicAuthenticationSDK/GGAlicomGraphicAuthenticationSDK.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-GGAlicomGraphicAuthenticationSDK_Example/Pods-GGAlicomGraphicAuthenticationSDK_Example-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/GGAlicomGraphicAuthenticationSDK/AlicomCaptcha4Resources.bundle",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GGAlicomGraphicAuthenticationSDK.framework",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AlicomCaptcha4Resources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GGAlicomGraphicAuthenticationSDK_Example/Pods-GGAlicomGraphicAuthenticationSDK_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GGAlicomGraphicAuthenticationSDK_Example/Pods-GGAlicomGraphicAuthenticationSDK_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A9F243E615AA92FB4CD2DDA4 /* [CP] Check Pods Manifest.lock */ = {

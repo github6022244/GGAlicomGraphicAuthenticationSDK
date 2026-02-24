@@ -8,7 +8,11 @@
 
 #import "GGViewController.h"
 
-@interface GGViewController ()
+#import <AlicomCaptcha4/AlicomCaptcha4.h>
+
+@interface GGViewController ()<AlicomCaptcha4SessionTaskDelegate>
+@property (strong, nonatomic) UIButton *startBtn;
+@property (nonatomic, strong) AlicomCaptcha4Session *captchaSession
 
 @end
 

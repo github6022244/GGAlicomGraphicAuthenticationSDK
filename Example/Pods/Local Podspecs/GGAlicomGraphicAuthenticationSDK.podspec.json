@@ -1,22 +1,48 @@
 {
   "name": "GGAlicomGraphicAuthenticationSDK",
   "version": "0.1.0",
-  "summary": "A short description of GGAlicomGraphicAuthenticationSDK.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/15991163/GGAlicomGraphicAuthenticationSDK",
+  "summary": "阿里云验证码保护 SDK（AlicomCaptcha4）- 静态框架版",
+  "description": "阿里云验证码保护 SDK，支持滑块/点选验证，适配 iOS 9.0+，\n包含 framework 核心库和 bundle 资源包，已配置 -ObjC 链接参数。",
+  "homepage": "https://help.aliyun.com/document_detail/2189838.html",
   "license": {
     "type": "MIT",
-    "file": "LICENSE"
+    "text": "      Copyright (c) [年份] [你的名字/团队名]\n      \n      Permission is hereby granted, free of charge, to any person obtaining a copy\n      of this software and associated documentation files (the \"Software\"), to deal\n      in the Software without restriction, including without limitation the rights\n      to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n      copies of the Software, and to permit persons to whom the Software is\n      furnished to do so, subject to the following conditions:\n      \n      The above copyright notice and this permission notice shall be included in all\n      copies or substantial portions of the Software.\n      \n      THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n      IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n      FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n      AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n      LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\n      SOFTWARE.\n      \n      ---\n      注意：本 Pod 仅封装阿里云验证码 SDK（AlicomCaptcha4），SDK 本身遵循阿里云商业授权协议，\n      使用前需确保已获得阿里云的合法授权，本仓库的 MIT 协议仅适用于封装代码，不覆盖 SDK 本身。\n"
   },
   "authors": {
-    "15991163": "1563084860@qq.com"
-  },
-  "source": {
-    "git": "https://github.com/15991163/GGAlicomGraphicAuthenticationSDK.git",
-    "tag": "0.1.0"
+    "GG": "1563084860@qq.com"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "13.0"
   },
-  "source_files": "GGAlicomGraphicAuthenticationSDK/Classes/**/*"
+  "requires_arc": true,
+  "static_framework": true,
+  "source": {
+    "git": "https://github.com/github6022244/GGAlicomGraphicAuthenticationSDK.git",
+    "tag": "0.1.0"
+  },
+  "vendored_frameworks": "Assets/AlicomCaptcha4.framework",
+  "resource_bundles": {
+    "AlicomCaptcha4Resources": [
+      "Assets/AlicomCaptcha4.bundle/**/*"
+    ]
+  },
+  "xcconfig": {
+    "OTHER_LDFLAGS": "-ObjC",
+    "FRAMEWORK_SEARCH_PATHS": "$(PODS_ROOT)/GGAlicomGraphicAuthenticationSDK/Assets",
+    "RESOURCE_SEARCH_PATHS": "$(PODS_ROOT)/GGAlicomGraphicAuthenticationSDK/Assets"
+  },
+  "frameworks": [
+    "UIKit",
+    "Foundation",
+    "Security",
+    "WebKit",
+    "CoreGraphics",
+    "AVFoundation"
+  ],
+  "libraries": [
+    "z",
+    "c++"
+  ],
+  "public_header_files": "Assets/AlicomCaptcha4.framework/Headers/*.h",
+  "private_header_files": "Assets/AlicomCaptcha4.framework/Headers/Private/*.h"
 }
