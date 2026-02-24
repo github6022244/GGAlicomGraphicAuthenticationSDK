@@ -1,0 +1,2 @@
+# GGAlicomGraphicAuthenticationSDK
+Pod阿里云图形验证SDK
