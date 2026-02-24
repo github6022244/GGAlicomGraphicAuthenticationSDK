@@ -1,0 +1,6 @@
+framework module Pods_GGAlicomGraphicAuthenticationSDK_Tests {
+  umbrella header "Pods-GGAlicomGraphicAuthenticationSDK_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

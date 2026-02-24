@@ -1,0 +1,22 @@
+{
+  "name": "GGAlicomGraphicAuthenticationSDK",
+  "version": "0.1.0",
+  "summary": "A short description of GGAlicomGraphicAuthenticationSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/15991163/GGAlicomGraphicAuthenticationSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "15991163": "1563084860@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/15991163/GGAlicomGraphicAuthenticationSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "GGAlicomGraphicAuthenticationSDK/Classes/**/*"
+}
