@@ -248,6 +248,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = 15991163;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = G738ZT7H2Q;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -327,11 +330,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GGAlicomGraphicAuthenticationSDK_Example/Pods-GGAlicomGraphicAuthenticationSDK_Example-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/GGAlicomGraphicAuthenticationSDK/AlicomCaptcha4Resources.bundle",
+				"${PODS_ROOT}/../../GGAlicomGraphicAuthenticationSDK/Assets/AlicomCaptcha4.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AlicomCaptcha4Resources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AlicomCaptcha4.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -519,9 +522,11 @@
 			baseConfigurationReference = 9877016FE2AF430492B87772 /* Pods-GGAlicomGraphicAuthenticationSDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G738ZT7H2Q;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GGAlicomGraphicAuthenticationSDK/GGAlicomGraphicAuthenticationSDK-Prefix.pch";
 				INFOPLIST_FILE = "GGAlicomGraphicAuthenticationSDK/GGAlicomGraphicAuthenticationSDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -535,9 +540,11 @@
 			baseConfigurationReference = 2EC60F675B8AE2DD0B72A86D /* Pods-GGAlicomGraphicAuthenticationSDK_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G738ZT7H2Q;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GGAlicomGraphicAuthenticationSDK/GGAlicomGraphicAuthenticationSDK-Prefix.pch";
 				INFOPLIST_FILE = "GGAlicomGraphicAuthenticationSDK/GGAlicomGraphicAuthenticationSDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

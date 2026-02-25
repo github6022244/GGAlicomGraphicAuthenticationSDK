@@ -1,6 +1,0 @@
-framework module AlicomCaptcha4 {
-  umbrella header "AlicomCaptcha4.h"
-
-  export *
-  module * { export * }
-}
