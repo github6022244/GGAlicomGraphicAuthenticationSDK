@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   # ===================== 基础信息 =====================
   s.name         = "GGAlicomGraphicAuthenticationSDK"
-  s.version      = "0.1.3"
+  s.version      = "0.1.4"
   s.summary      = "阿里云验证码保护 SDK（AlicomCaptcha4）- 静态框架版"
   s.description  = <<-DESC
                     阿里云验证码保护 SDK，支持滑块/点选验证，适配 iOS 9.0+，
@@ -35,7 +35,10 @@ Pod::Spec.new do |s|
   s.static_framework = true
 
   # ===================== 源码/资源路径 =====================
-  s.source       = { :git => "https://github.com/github6022244/GGAlicomGraphicAuthenticationSDK.git", :tag => s.version.to_s }
+  s.source = {
+    :git => "https://github.com/github6022244/GGAlicomGraphicAuthenticationSDK.git",
+    :tag => s.version.to_s
+  }
 
   # 1. 引入阿里云静态 framework
   s.vendored_frameworks = "GGAlicomGraphicAuthenticationSDK/Classes/AlicomCaptcha4.framework"
