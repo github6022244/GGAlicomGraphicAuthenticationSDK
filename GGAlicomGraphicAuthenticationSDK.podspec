@@ -40,8 +40,8 @@ Pod::Spec.new do |s|
     :tag => s.version.to_s
   }
 
-  # 1. 引入阿里云静态 framework
-  s.vendored_frameworks = "GGAlicomGraphicAuthenticationSDK/Classes/AlicomCaptcha4.framework"
+  # 1. 引入阿里云静态 xcframework（支持设备和模拟器）
+  s.vendored_frameworks = "GGAlicomGraphicAuthenticationSDK/Classes/XCFramework/AlicomCaptcha4.xcframework"
 
   # 2. 引入 bundle 资源包
   s.resources = [
@@ -55,9 +55,8 @@ Pod::Spec.new do |s|
   # 1. 添加 -ObjC 解决 Category 调用问题
   s.xcconfig = {
     "OTHER_LDFLAGS" => "-ObjC",
-    "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/#{s.name}/GGAlicomGraphicAuthenticationSDK/Classes",
-    "RESOURCE_SEARCH_PATHS" => "$(PODS_ROOT)/#{s.name}/GGAlicomGraphicAuthenticationSDK/Assets",
-    "HEADER_SEARCH_PATHS" => "$(PODS_ROOT)/#{s.name}/GGAlicomGraphicAuthenticationSDK/Classes/AlicomCaptcha4.framework/Headers"
+    "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/#{s.name}/GGAlicomGraphicAuthenticationSDK/Classes/XCFramework",
+    "RESOURCE_SEARCH_PATHS" => "$(PODS_ROOT)/#{s.name}/GGAlicomGraphicAuthenticationSDK/Assets"
   }
   
   # 2. SDK 依赖的系统框架

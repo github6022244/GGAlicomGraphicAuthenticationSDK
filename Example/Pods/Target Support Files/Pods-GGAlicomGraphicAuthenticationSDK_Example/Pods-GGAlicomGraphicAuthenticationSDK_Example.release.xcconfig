@@ -1,8 +1,8 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/GGAlicomGraphicAuthenticationSDK" "${PODS_ROOT}/../../GGAlicomGraphicAuthenticationSDK/Classes" $(PODS_ROOT)/GGAlicomGraphicAuthenticationSDK/GGAlicomGraphicAuthenticationSDK/Classes
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/GGAlicomGraphicAuthenticationSDK" "${PODS_ROOT}/../../GGAlicomGraphicAuthenticationSDK/Classes/XCFramework" "${PODS_XCFRAMEWORKS_BUILD_DIR}/GGAlicomGraphicAuthenticationSDK" $(PODS_ROOT)/GGAlicomGraphicAuthenticationSDK/GGAlicomGraphicAuthenticationSDK/Classes/XCFramework
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/GGAlicomGraphicAuthenticationSDK/GGAlicomGraphicAuthenticationSDK.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -ObjC -framework "AlicomCaptcha4" -framework "GGAlicomGraphicAuthenticationSDK"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"c++" -l"z" -framework "AVFoundation" -framework "AlicomCaptcha4" -framework "CoreGraphics" -framework "Foundation" -framework "GGAlicomGraphicAuthenticationSDK" -framework "Security" -framework "UIKit" -framework "WebKit"
 OTHER_MODULE_VERIFIER_FLAGS = $(inherited) "-F${PODS_CONFIGURATION_BUILD_DIR}/GGAlicomGraphicAuthenticationSDK"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
