@@ -88,6 +88,12 @@ typedef void (^GGGraphicAuthFailedBlock)(NSError *_Nullable error);
  */
 + (BOOL)isCaptchaErrorCodeValid:(GGGraphicAuthCaptchaErrorCode)code;
 
+/**
+ 获取SDK版本
+ @return 版本号
+ */
++ (NSString *)alicomCaptcha4SDKVersion;
+
 @end
 
 NS_ASSUME_NONNULL_END

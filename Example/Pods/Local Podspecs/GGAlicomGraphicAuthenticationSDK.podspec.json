@@ -1,6 +1,6 @@
 {
   "name": "GGAlicomGraphicAuthenticationSDK",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "阿里云验证码保护 SDK（AlicomCaptcha4）- 静态框架版",
   "description": "阿里云验证码保护 SDK，支持滑块/点选验证，适配 iOS 9.0+，\n包含 framework 核心库和 bundle 资源包，已配置 -ObjC 链接参数。",
   "homepage": "https://help.aliyun.com/document_detail/2189838.html",
@@ -18,7 +18,7 @@
   "static_framework": true,
   "source": {
     "git": "https://github.com/github6022244/GGAlicomGraphicAuthenticationSDK.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "vendored_frameworks": "GGAlicomGraphicAuthenticationSDK/Classes/AlicomCaptcha4.framework",
   "resources": [
@@ -31,6 +31,5 @@
     "OTHER_LDFLAGS": "-ObjC",
     "FRAMEWORK_SEARCH_PATHS": "$(PODS_ROOT)/GGAlicomGraphicAuthenticationSDK/GGAlicomGraphicAuthenticationSDK/Classes",
     "RESOURCE_SEARCH_PATHS": "$(PODS_ROOT)/GGAlicomGraphicAuthenticationSDK/GGAlicomGraphicAuthenticationSDK/Assets"
-  },
-  "public_header_files": "GGAlicomGraphicAuthenticationSDK/Classes/**/*"
+  }
 }

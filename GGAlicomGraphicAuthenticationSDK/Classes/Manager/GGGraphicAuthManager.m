@@ -190,6 +190,14 @@ const GGGraphicAuthCaptchaErrorCode GGGraphicAuthCaptchaError_MaximumNumberOfVer
     }
 }
 
+/**
+ 获取SDK版本
+ @return 版本号
+ */
++ (NSString *)alicomCaptcha4SDKVersion {
+    return [AlicomCaptcha4Session sdkVersion];
+}
+
 #pragma mark - Getters
 
 /**

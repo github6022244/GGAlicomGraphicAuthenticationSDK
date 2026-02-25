@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   # ===================== 基础信息（必填，按需修改）=====================
   s.name         = "GGAlicomGraphicAuthenticationSDK"
-  s.version      = "0.1.1"
+  s.version      = "0.1.2"
   s.summary      = "阿里云验证码保护 SDK（AlicomCaptcha4）- 静态框架版"
   s.description  = <<-DESC
                     阿里云验证码保护 SDK，支持滑块/点选验证，适配 iOS 9.0+，
@@ -67,5 +67,5 @@ Pod::Spec.new do |s|
   #s.frameworks = "UIKit", "Foundation", "Security", "WebKit", "CoreGraphics", "AVFoundation"
 
   # ===================== 头文件暴露（方便项目导入）=====================
-  s.public_header_files = "GGAlicomGraphicAuthenticationSDK/Classes/**/*"
+  #s.public_header_files = "GGAlicomGraphicAuthenticationSDK/Classes/**/*"
 end
