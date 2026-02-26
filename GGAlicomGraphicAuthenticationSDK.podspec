@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
   # ===================== 基础信息 =====================
   s.name         = "GGAlicomGraphicAuthenticationSDK"
-  s.version      = "0.1.5"
-  s.summary      = "阿里云验证码保护 SDK（AlicomCaptcha4）- 静态框架版"
+  s.version      = "0.1.6"
+  s.summary      = "阿里云验证码保护 SDK（AlicomCaptcha4）- 静态框架版，SDK版本1.8.3.2"
   s.description  = <<-DESC
                     阿里云验证码保护 SDK，支持滑块/点选验证，适配 iOS 9.0+，
                     包含 framework 核心库和 bundle 资源包，已配置 -ObjC 链接参数。
